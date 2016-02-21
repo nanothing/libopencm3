@@ -40,7 +40,10 @@ CFLAGS		= -Os -g \
 
 ARFLAGS		= rcs
 
-OBJS		= gpio.o gpio_common_all.o gpio_common_f0234.o
+OBJS		= gpio.o
+
+OBJS            += gpio_common_all.o gpio_common_f0234.o \
+                   rcc_common_all.o
 
 VPATH += ../../usb:../:../../cm3:../common
 VPATH += ../../ethernet
